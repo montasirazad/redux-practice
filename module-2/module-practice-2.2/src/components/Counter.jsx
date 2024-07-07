@@ -1,12 +1,12 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import { connect } from "react-redux";
-import { decrement, increment } from "../redux/simpleCounter/actions";
+import { decrement, increment } from "../redux/simpleCounter/action";
 
-// eslint-disable-next-line react-refresh/only-export-components
 function Counter({ count, increment, decrement }) {
   return (
     <div className="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow">
-      <p>map to props method</p>
+      <small>map to state props method</small>
       <div className="text-2xl font-semibold">{count}</div>
       <div className="flex space-x-3">
         <button
@@ -31,11 +31,12 @@ const mapStateToProps = (state) => {
     count: state.value,
   };
 };
+
 const mapDispatchToProps = (dispatch) => {
   return {
     increment: (value) => dispatch(increment(value)),
     decrement: (value) => dispatch(decrement(value)),
   };
 };
-// eslint-disable-next-line react-refresh/only-export-components
+
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
