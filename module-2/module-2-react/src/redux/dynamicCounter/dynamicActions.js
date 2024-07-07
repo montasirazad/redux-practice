@@ -1,4 +1,4 @@
-import { DDECREMENT, DINCREMENT } from "./actionTypes";
+import { DDECREMENT, DINCREMENT } from "./dynamicActionTypes";
 
 export const increment = (value) => {
   return {

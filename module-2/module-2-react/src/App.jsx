@@ -1,5 +1,6 @@
 import { Provider } from "react-redux";
 import "./App.css";
+ 
 import DynamicHooksCounter from "./components/DynamicHooksCounter";
 import HooksCounter from "./components/HooksCounter";
 import VariableCounter from "./components/VariableCounter";
