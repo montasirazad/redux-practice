@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { decrement, increment } from "../redux/simpleCounter/action";
 
 function Counter({ count, increment, decrement }) {
+  
   return (
     <div className="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow">
       <small>map to state props method</small>
